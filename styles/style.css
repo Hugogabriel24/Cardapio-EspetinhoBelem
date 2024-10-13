@@ -1,0 +1,352 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FOOTER UBER/GOOGLE */
+.footer-content-other {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1rem;
+}
+
+.footer-social-media-other {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.uber-wrapper{
+  background: #cccccc; /* Cor de fundo dos botões */
+  padding: 5px 25px;
+  border-radius: 5px;
+  color: #1b1b1b;
+  text-decoration: none;
+}
+.google-wrapper {
+  background: #475dd4; /* Cor de fundo dos botões */
+  padding: 5px 25px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.uber-wrapper:hover,
+.google-wrapper:hover {
+  opacity: 0.8;
+}
+
+.uber-wrapper .footer-link .fa-uber,
+.google-wrapper .footer-link .fa-google {
+  margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+}
+
+.text-uber,
+.text-google {
+  font-size: 0.9em;
+}
+
+.uber-wrapper .footer-link .fa-uber {
+  color: black; /* Cor do ícone do Uber */
+}
+
+.google-wrapper .footer-link .fa-google {
+  color: #fbbc05; /* Cor do ícone do Google */
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  .footer-social-media-other {
+    flex-direction: column; /* Altera a direção para coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    gap: 1rem; /* Adiciona espaço entre os itens */
+  }
+
+  .uber-wrapper,
+  .google-wrapper {
+    width: 100%; /* Define a largura para preencher a tela */
+    text-align: center; /* Centraliza o texto */
+  }
+}
+/* FOOTER UBER/GOOGLE */
+
+/* FOOTER REDES SOCIAIS/OUTROS FOOTER*/
+
+.footer-content {
+  background-color: black;
+  display: grid;
+  padding: 1rem 1rem;
+  place-items: center; /* Centraliza os itens vertical e horizontalmente */
+}
+
+
+.footer-contatos h1 {
+  margin-bottom: 0.50rem;
+}
+
+.footer-social-media {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.footer-social-media .footer-link i {
+  font-size: 1.25rem;
+
+}
+.footer-social-media-other .footer-link i {
+  font-size: 20px;
+
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  background-color: #1C1C1C;
+  font-size: 0.9rem;
+  padding: 1.0rem;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem 2rem;
+  }
+
+}
+
+.footer-social-media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: white;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.footer-social-media .footer-link:hover {
+  opacity: 0.8;
+}
+
+#instagram {
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+  background-color: #4267b3;
+}
+
+#whatsapp {
+  background-color: #25d366;
+}
+
+.footer-imi {
+  margin-top: auto;
+  padding: 5px;
+  /* Ajuste conforme necessário */
+  background-color: #f4f4f4;
+  /* Cor de fundo do rodapé */
+  text-align: center;
+}
+
+/* FOOTER REDES SOCIAIS/OUTROS FOOTER*/
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.promocao-div {
+  gap: 2rem;
+}
+
+.product-image {
+  border: 2px solid orange;
+  /* Adiciona uma borda laranja de 2px */
+}
+
+.product-image-promo {
+  border: 2px solid green;
+  /* Adiciona uma borda laranja de 2px */
+}
+
+
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.popup-content {
+  /* Estilos do conteúdo do popup */
+}
+
+.up-btn {
+  background-color: rgba(255, 140, 0, 0.7);
+  color: white;
+  border: 0;
+  width: 60px;
+  height: 60px;
+  outline: none;
+  padding: 4px;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  cursor: pointer;
+  opacity: 0.8;
+  visibility: hidden;
+  transition: all .4s ease;
+  font-size: 36px;
+
+}
+
+.up-btn.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.comp-indisponivel {
+  padding: 0.5rem;
+  /* Altere esse valor conforme necessário para ajustar o espaço */
+  background-color: #8B0000;
+  /* Cor de fundo vermelho escuro */
+  color: white;
+  /* Cor do texto */
+  font-weight: bold;
+  /* Negrito */
+  border-radius: 0.50rem;
+  /* Borda arredondada */
+}
+
+.tab-nav-bar {
+  position: relative;
+  margin: 0 auto; /* Adicione margens externas de 20px em todos os lados */
+  margin-top: 20px;
+  width: 100%;
+  max-width: 100%; /* Defina a largura máxima igual à largura da tela */
+  overflow-x: auto; /* Adicione rolagem horizontal se necessário */
+  transition: top 0.3s ease;
+}
+
+.tab-navigation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  /* Adicionado */
+}
+
+/* Para telas de PC e tablet */
+@media (min-width: 768px) {
+  .tab-menu {
+    border-radius: 10px;
+  }
+}
+
+/* Para telas de celular */
+@media (max-width: 767px) {
+  .tab-menu {
+    border-radius: 0;
+  }
+}
+
+.tab-menu {
+  color: white;
+  list-style: none;
+  background: #FF8C00;
+  max-width: 100%; /* Alterado para 100% */
+  margin: 0 auto; /* Centralizado horizontalmente */
+  padding: 10px;
+  white-space: nowrap;
+  overflow-x: hidden; /* Alterado para hidden */
+  user-select: none;
+  scroll-behavior: smooth;
+}
+.tab-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.left-btn,
+.right-btn {
+  position: absolute;
+  color: white;
+  font-size: 1.8em;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.left-btn {
+  left: 0;
+  background: linear-gradient(to left, transparent, white, 80%);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  display: none;
+}
+
+.right-btn {
+  right: 0;
+  background: linear-gradient(to right, transparent, white, 80%);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.tab-btn {
+  color: black;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0 2px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  background: #FFA500;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s ease;
+}
+
+.tab-btn:hover {
+  background: black;
+  color: white;
+}
+
+.tab-nav-bar.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.tab-nav-bar .tab-navigation {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 5px 0;
+  /* Ajuste o padding conforme necessário */
+}
+
+.tab-btn.active {
+  background: black;
+  color: white;
+}

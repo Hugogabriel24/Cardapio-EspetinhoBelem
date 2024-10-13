@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Espetinho Belém</title>
+
+</head>
+
+<body>
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-center bg-cover">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/Logo-Espetinho-Belem.jpg" alt="logo-espetinho-belem"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" />
+            <h1 class=" font-bold text-white text-4xl mt-4 mb-2">
+                Espetinho Belém
+            </h1>
+
+            <span class="text-white md:2xl text-center">
+                Avenida Jerónimo Vilela - 633, Campo Grande, Recife-PE
+                </span">
+                <div class="bg-orange-500 px-4 mx-4 my-3 py-1 rounded-lg mt-5 text-center" id="date-span">
+                    <span class="text-white font-medium">
+                        Terça a Sexta
+                        (18:00h as 01:00h)
+                        Sábado e domingo
+                        (17:30 00h as 01:30)
+                    </span>
+                </div>
+        </div>
+    </header>
+
+    <!-- UPBUTTON -->
+    <article>
+        <button class="uil uil-angle-up up-btn" onclick="scrollToTop()">
+        </button>
+    </article>
+
+    <!-- Navegação -->
+    <div class="tab-nav-bar" id="tabNav">
+        <div class="tab-navigation">
+            <i class="uil uil-angle-left left-btn"></i>
+            <i class="uil uil-angle-right right-btn"></i>
+            <ul class="tab-menu">
+                <li id="promocao-btn" class="tab-btn"><a href="#promocao-text">Promoções</a></li>
+                <li id="espetinho-btn" class="tab-btn"><a href="#espetinho-div">Espetinhos</a></li>
+                <li id="caldinho-btn" class="tab-btn"><a href="#caldinho-text">Caldinhos</a></li>
+                <li id="petisco-btn" class="tab-btn"><a href="#petisco-text">Petiscos</a></li>
+                <li id="bebidas-btn" class="tab-btn"><a href="#bebidas-text">Bebidas</a></li>
+                <li id="destilados-btn" class="tab-btn"><a href="#destilados-text">Destilados</a></li>
+                <li id="drink-btn" class="tab-btn"><a href="#drinks-text">Drinks</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Titulo de MENU -->
+    <div class="flex items-center mx-auto max-w-7xl px-3">
+        <img src="./assets/cardapio.png" alt="produto-1"
+            class="w-7 h-7 rounded-md hover:scale-110 hover:rotate-2 duration-300" />
+        <h2 class="text-2xl font-bold sm:text-3xl mx-3 mt-2 mb-2">Menu</h2>
+
+    </div>
+
+    <div class="mx-auto max-w-7xl my-2 px-2">
+        <div class="bg-orange-400 rounded-lg p-4 flex items-center justify-between">
+            <h2 id="promocao-text" class="font-bold text-2xl text-center text-white">Promoções</h2>
+            <img src="./assets/etiqueta-de-preco.png" alt="produto-1" id="promocao-img"
+                class="w-10 h-10 rounded-md hover:scale-110 hover:rotate-2 mx-3 duration-300 mr-2" />
+        </div>
+        <div id="promocao-container"></div>
+    </div>
+
+    <div id="menu">
+        <!-- ESPETINHOS -->
+        <div class="mx-auto max-w-7xl px-2 my-4">
+            <h2 id="espetinho-div" class="font-bold text-2xl">Espetinhos</h2>
+        </div>
+        <div id="espetinhos-container"></div>
+        <!-- CALDINHOS -->
+        <div class="mx-auto max-w-7xl px-2 my-4">
+            <h2 id="caldinho-text" class="font-bold text-2xl">Caldinhos</h2>
+        </div>
+        <div id="caldinhos-container"></div>
+        <!-- PETISCOS -->
+        <div class="mx-auto max-w-7xl px-2 my-4">
+            <h2 id="petisco-text" class="font-bold text-2xl">Petiscos</h2>
+        </div>
+        <div id="petiscos-container"></div>
+        <!-- BEBIDAS -->
+        <div class="mx-auto max-w-7xl px-2 my-4">
+            <h2 id="bebidas-text" class="font-bold text-2xl">Bebidas</h2>
+        </div>
+        <div id="bebidas-container"></div>
+
+        <div class="mx-auto max-w-7xl my-2 px-2">
+            <!-- DESTILADOS -->
+            <div class="bg-orange-400 rounded-lg p-4 flex items-center justify-between mt-5">
+                <h2 id="destilados-text" class="font-bold text-2xl text-center text-white">Destilados</h2>
+                <img src="./assets/licor.png" alt="produto-1"
+                    class="w-10 h-10 rounded-md hover:scale-110 hover:rotate-2 mx-3 duration-300 mr-2" />
+            </div>
+            <div class="bg-orange-100 rounded-lg mt-2 px-4 py-6">
+                <link rel="stylesheet" href="./styles/output.css" />
+                <div class="bg-orange-100 rounded-lg mt-2 px-4 py-6">
+                    <div id="destilados-container"></div>
+
+                </div>
+            </div>
+
+            <div class="mx-auto max-w-7xl my-2 px-2" id="all-drinks-container">
+                <!-- DRINKS -->
+                <div class="bg-orange-400 rounded-lg p-4 flex items-center justify-between mt-5">
+                    <h2 id="drinks-text" class="font-bold text-2xl text-center text-white">Drinks</h2>
+                    <img src="./assets/alcool.png" alt="produto-1"
+                        class="w-10 h-10 rounded-md hover:scale-110 hover:rotate-2 mx-3 duration-300 mr-2" />
+                </div>
+                <div class="bg-orange-100 rounded-lg mt-2 px-4 py-6">
+                    <div id="drinks-container"></div>
+
+                </div>
+            </div>
+
+        </div>
+        <script src="main.js">
+
+        </script>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-contatos font-bold text-white">Contatos</div>
+        <div class="footer-social-media">
+            <a href="https://www.instagram.com/espetinho_belem/" class="footer-link" id="instagram" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="footer-link" id="facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" class="footer-link" id="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-content-other">
+        <div class="footer-social-media-other">
+            <div class="uber-wrapper">
+                <a href="https://m.uber.com/ul/?action=setPickup&client_id=YmEXjXyi_aLxbHI8OcoxFm5vB2dZe-ZLkNcTYyuo&pickup=my_location" class="footer-link" id="uber" target="_blank">
+                    <i class="fa-brands fa-uber"></i>
+                    <span class="text-uber">Chame o Uber</span>
+                </a>
+            </div>
+            <div class="google-wrapper">
+                <a href="https://www.google.com/search?q=espetinho+belem&rlz=1C1UEAD_enBR1104BR1104&oq=espetinho+belem&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQIxgnMgwIAhAjGCcYgAQYigUyCggDEAAYkgMYgAQyDQgEEAAYkgMYgAQYigUyDQgFEAAYsQMYyQMYgAQyBggGEEUYPDIGCAcQRRg80gEIMjA2NGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#ip=1&lrd=0x7ab194c5aa4b427:0x2aa84d3a35aecbc7,3,,,," class="footer-link" id="google" target="_blank">
+                    <i class="fa-brands fa-google"></i>
+                    <span class="text-google">Avalie-nos</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright text-white">&#169 Todos os direitos reservados.</div>
+</footer>
+
+</body>
+
+</html>
