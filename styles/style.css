@@ -148,7 +148,6 @@
   padding: 5px;
   /* Ajuste conforme necessário */
   background-color: #f4f4f4;
-  /* Cor de fundo do rodapé */
   text-align: center;
 }
 
@@ -166,12 +165,10 @@
 
 .product-image {
   border: 2px solid orange;
-  /* Adiciona uma borda laranja de 2px */
 }
 
 .product-image-promo {
   border: 2px solid green;
-  /* Adiciona uma borda laranja de 2px */
 }
 
 
