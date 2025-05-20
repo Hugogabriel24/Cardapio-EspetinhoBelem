@@ -19,14 +19,14 @@
 }
 
 .uber-wrapper{
-  background: #cccccc; /* Cor de fundo dos botões */
+  background: #cccccc;
   padding: 5px 25px;
   border-radius: 5px;
   color: #1b1b1b;
   text-decoration: none;
 }
 .google-wrapper {
-  background: #475dd4; /* Cor de fundo dos botões */
+  background: #475dd4;
   padding: 5px 25px;
   border-radius: 5px;
   color: white;
@@ -40,7 +40,7 @@
 
 .uber-wrapper .footer-link .fa-uber,
 .google-wrapper .footer-link .fa-google {
-  margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+  margin-right: 8px;
 }
 
 .text-uber,
@@ -49,36 +49,34 @@
 }
 
 .uber-wrapper .footer-link .fa-uber {
-  color: black; /* Cor do ícone do Uber */
+  color: black; 
 }
 
 .google-wrapper .footer-link .fa-google {
-  color: #fbbc05; /* Cor do ícone do Google */
+  color: #fbbc05;
 }
 
 /* Estilos para dispositivos móveis */
 @media screen and (max-width: 768px) {
   .footer-social-media-other {
-    flex-direction: column; /* Altera a direção para coluna */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    gap: 1rem; /* Adiciona espaço entre os itens */
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; 
   }
 
   .uber-wrapper,
   .google-wrapper {
-    width: 100%; /* Define a largura para preencher a tela */
-    text-align: center; /* Centraliza o texto */
+    width: 100%;
+    text-align: center; 
   }
 }
-/* FOOTER UBER/GOOGLE */
 
-/* FOOTER REDES SOCIAIS/OUTROS FOOTER*/
 
 .footer-content {
   background-color: black;
   display: grid;
   padding: 1rem 1rem;
-  place-items: center; /* Centraliza os itens vertical e horizontalmente */
+  place-items: center;
 }
 
 
@@ -154,8 +152,6 @@
   text-align: center;
 }
 
-/* FOOTER REDES SOCIAIS/OUTROS FOOTER*/
-
 
 .wrapper {
   display: flex;
@@ -193,9 +189,6 @@
   z-index: 1000;
 }
 
-.popup-content {
-  /* Estilos do conteúdo do popup */
-}
 
 .up-btn {
   background-color: rgba(255, 140, 0, 0.7);
@@ -228,24 +221,19 @@
 
 .comp-indisponivel {
   padding: 0.5rem;
-  /* Altere esse valor conforme necessário para ajustar o espaço */
   background-color: #8B0000;
-  /* Cor de fundo vermelho escuro */
   color: white;
-  /* Cor do texto */
   font-weight: bold;
-  /* Negrito */
   border-radius: 0.50rem;
-  /* Borda arredondada */
 }
 
 .tab-nav-bar {
   position: relative;
-  margin: 0 auto; /* Adicione margens externas de 20px em todos os lados */
+  margin: 0 auto;
   margin-top: 20px;
   width: 100%;
-  max-width: 100%; /* Defina a largura máxima igual à largura da tela */
-  overflow-x: auto; /* Adicione rolagem horizontal se necessário */
+  max-width: 100%
+  overflow-x: auto;
   transition: top 0.3s ease;
 }
 
@@ -257,17 +245,14 @@
   max-width: fit-content;
   margin: 0 auto;
   text-align: center;
-  /* Adicionado */
 }
 
-/* Para telas de PC e tablet */
 @media (min-width: 768px) {
   .tab-menu {
     border-radius: 10px;
   }
 }
 
-/* Para telas de celular */
 @media (max-width: 767px) {
   .tab-menu {
     border-radius: 0;
@@ -278,11 +263,11 @@
   color: white;
   list-style: none;
   background: #FF8C00;
-  max-width: 100%; /* Alterado para 100% */
-  margin: 0 auto; /* Centralizado horizontalmente */
+  max-width: 100%; 
+  margin: 0 auto;
   padding: 10px;
   white-space: nowrap;
-  overflow-x: hidden; /* Alterado para hidden */
+  overflow-x: hidden;
   user-select: none;
   scroll-behavior: smooth;
 }
@@ -343,7 +328,7 @@
   max-width: 700px;
   margin: 0 auto;
   padding: 5px 0;
-  /* Ajuste o padding conforme necessário */
+
 }
 
 .tab-btn.active {
